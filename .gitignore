@@ -1,0 +1,15 @@
+.venv/
+.cache/
+node_modules/
+dist/
+staticfiles/
+__pycache__/
+*.py[cod]
+.env
+data/
+*.sqlite3*
+coverage/
+playwright-report/
+test-results/
+*.log
+*.tsbuildinfo
