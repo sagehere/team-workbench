@@ -97,9 +97,9 @@ networks:
 
 代理目标设为 `http://team-workbench:8000`，保留原始 Host 并设置 `X-Forwarded-Proto: https`。不要将代理网络配置用于未受信任的容器。
 
-### 首次 GHCR 发布
+### 镜像公开性
 
-GitHub 首次创建的容器包默认私有。发布者需要在 [镜像包设置](https://github.com/users/sagehere/packages/container/team-workbench/settings) 将可见性设为 Public；这是首次发布的一次性设置。之后 VPS 可免登录拉取。源码与镜像可公开下载，实际任务数据只存储在 VPS 数据目录中。
+本仓库的 `1.0.0` 双架构镜像已验证可匿名拉取，部署者无需登录 GHCR 或修改公开设置。源码与镜像可公开下载，实际任务数据只存储在 VPS 数据目录中。
 
 ## 备份、升级与恢复
 
